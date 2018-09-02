@@ -1,4 +1,4 @@
-import expect from '__APP_NAME_58397D59__/tests/expect';
+import expect from 'bordering-countries-with-greatest-ratio-in-gdp-per-capita/tests/expect';
 
 describe('test', () => {
   it('works', () => {

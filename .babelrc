@@ -5,7 +5,7 @@
       "module-resolver",
       {
         "alias": {
-          "__APP_NAME_58397D59__": "./src",
+          "bordering-countries-with-greatest-ratio-in-gdp-per-capita": "./src",
         }
       }
     ]
