@@ -1,6 +1,6 @@
 {
   "name": "bordering-countries-with-greatest-ratio-in-gdp-per-capita",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bordering countries with greatest ratio in GDP (PPP) per capita according to CIA",
   "main": "build/index.js",
   "scripts": {
@@ -13,7 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/oprogramador/bordering-countries-with-greatest-ratio-in-gdp-per-capita.git"
   },
-  "keywords": ["bordering","border","countries","ratio","gdp","ppp","capita","cia"],
+  "keywords": [
+    "bordering",
+    "border",
+    "countries",
+    "ratio",
+    "gdp",
+    "ppp",
+    "capita",
+    "cia"
+  ],
   "author": "oprogramador",
   "license": "MIT",
   "bugs": {
