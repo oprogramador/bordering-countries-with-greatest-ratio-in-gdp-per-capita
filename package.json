@@ -1,6 +1,6 @@
 {
   "name": "bordering-countries-with-greatest-ratio-in-gdp-per-capita",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "bordering countries with greatest ratio in GDP (PPP) per capita according to CIA",
   "main": "build/index.js",
   "scripts": {
