@@ -29,6 +29,7 @@ const withSelectedProperties = sortedRatios.map(info => ({
     gdp: info.secondCountryGDP.valueInUSD,
     name: info.secondCountry.name.common,
   },
+  ratio: info.ratio,
   region: _.uniq([info.country.region, info.secondCountry.region]),
   richer: {
     cca2: info.country.cca2,
@@ -39,6 +40,10 @@ const withSelectedProperties = sortedRatios.map(info => ({
   },
 }));
 
-console.log(withSelectedProperties);
+withSelectedProperties.forEach(({ poorer, ratio, region, richer }, i) => {
+  console.log('|-');
+  // eslint-disable-next-line max-len
+  console.log(`| ${i + 1} || style="text-align:left;" | {{flag|${richer.name}}} || ${richer.gdp.toLocaleString()} || ${richer.date.getFullYear()}&nbsp;<small>est.</small> || style="text-align:left;" | {{flag|${poorer.name}}} || ${poorer.gdp.toLocaleString()} || ${poorer.date.getFullYear()}&nbsp;<small>est.</small> || ${ratio.toFixed(3)} || style="text-align:left;" | ${region[0]}${region[1] ? ` / ${region[1]}` : ''}`);
+});
 
 export default withSelectedProperties;
