@@ -40,7 +40,9 @@ const withSelectedProperties = sortedRatios.map(info => ({
   },
 }));
 
-withSelectedProperties.forEach(({ poorer, ratio, region, richer }, i) => {
+withSelectedProperties.forEach(({
+  poorer, ratio, region, richer,
+}, i) => {
   console.log('|-');
   // eslint-disable-next-line max-len
   console.log(`| ${i + 1} || style="text-align:left;" | {{flag|${richer.name}}} || ${richer.gdp.toLocaleString()} || ${richer.date.getFullYear()}&nbsp;<small>est.</small> || style="text-align:left;" | {{flag|${poorer.name}}} || ${poorer.gdp.toLocaleString()} || ${poorer.date.getFullYear()}&nbsp;<small>est.</small> || ${ratio.toFixed(3)} || style="text-align:left;" | ${region[0]}${region[1] ? ` / ${region[1]}` : ''}`);
